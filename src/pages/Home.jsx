@@ -1,5 +1,4 @@
 import About from '../components/About'
-import Banner from '../components/Banner'
 import Blog from '../components/Blog'
 import Breeds from '../components/Breeds'
 import Footer from '../components/Footer'
@@ -12,7 +11,6 @@ function Home() {
 
   return (
     <>
-      <Banner />
       <Header />
       <Hero />
       <About />

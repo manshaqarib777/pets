@@ -8,17 +8,17 @@ export default function BlogCard({ title, content, image, link }) {
                     <img src={image} alt={title} className="w-full h-96 object-cover" />
                 </div>
                 <div className="flex flex-col pl-2">
-                    <h3 className="font-extrabold text-left font-helvetica text-lg">{title}</h3>
-                    <p className="font-normal mt-2">
+                    {/* <h3 className="font-extrabold text-left font-helvetica text-lg">{title}</h3> */}
+                    {/* <p className="font-normal mt-2">
                         {content}
-                    </p>
-                    <Link to={"/"}>
+                    </p> */}
+                    {/* <Link to={"/"}>
                     <button
                             className="my-10 bg-blue-950 hover:bg-blue-800 text-white font-semibold p-3 rounded-lg w-fit font-inter text-sm"
                         >
                         View Details
                     </button>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </>

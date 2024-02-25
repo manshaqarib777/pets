@@ -1,5 +1,6 @@
 import { AiFillRightCircle } from 'react-icons/ai';
 import PetCard from "./Cards/PetCard";
+import { Link } from 'react-router-dom';
 
 const breeds = [
     {
@@ -85,13 +86,14 @@ export default function Breeds() {
                         )
                     })}
                 </div>
-                <button
-                    className="my-10 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm"
-                    onClick={() => window.location.href = '/breeds'}
-                >
-                    Enquire More
-                    <AiFillRightCircle className="inline-block ml-5 text-2xl text-white " />
-                </button>
+                <Link to={"pet-enquire"}>
+                    <button
+                        className="my-10 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm"
+                    >
+                        Enquire More
+                        <AiFillRightCircle className="inline-block ml-5 text-2xl text-white " />
+                    </button>
+                </Link>
             </div>
         </>
     )

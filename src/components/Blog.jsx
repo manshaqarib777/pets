@@ -45,6 +45,7 @@ export default function Blog() {
                         )
                     })}
                 </div>
+                <p className='font-normal mt-2 mb-5'>Join our team of compassionate volunteers and make a difference in the lives of pets in need! At Pet Heaven Society, volunteers are the heart and soul of our organization. Whether you're passionate about walking dogs, socializing with cats, assisting with adoption events, or lending a helping hand behind the scenes, there's a rewarding opportunity waiting for you. As a volunteer, you'll have the chance to directly impact the lives of animals by providing love, care, and companionship while they await their forever homes. Join us in our mission to create a world where every pet is cherished and loved. Sign up today to become a part of our dedicated volunteer family!</p>
                 <Link to={"register"} className="my-10 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm">
                     Signup
                     <AiFillRightCircle className="inline-block ml-5 text-2xl text-white " />

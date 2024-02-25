@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ServiceCard from "./Cards/ServiceCard";
 import { AiFillRightCircle } from 'react-icons/ai';
 
@@ -5,19 +6,19 @@ const services = [
     {
         title: "Dog/Cat Grooming",
         description: "Our priority is to ensure the well-being and happiness of every pet entrusted to us. By releasing your pet to Pet Heaven Society, you can have peace of mind knowing that they will receive the love, care, and attention they deserve while we work diligently to find them a new forever home.",
-        image: '/services/pet-grooming.png',
+        image: '/services/cat3.jpg',
         link: '/services/pet-grooming'
     },
     {
         title: "Home Treatment",
-        description: "We believe that every pet deserves a second chance, and we're committed to providing a safe and nurturing environment for pets in need. Our experienced team will carefully assess your pet's needs and work tirelessly to find them the perfect match with a loving adopter..",
+        description: "We believe that every pet deserves a second chance, and we're committed to providing a safe and nurturing environment for pets in need. Our experienced team will carefully assess your pet's needs and work tirelessly to find them the perfect match with a loving adopter.",
         image: "/services/home-treatment.png",
         link: '/services/home-treatment'
     },
     {
         title: "Clinical Treatment",
         description: "If you're considering releasing your pet to Pet Heaven Society, please reach out to us to discuss your options. We're here to listen, support, and guide you through this process with empathy and understanding.",
-        image: "/services/clinical-treatment.png",
+        image: "/services/cat1.jpg",
         link: '/services/clinical-treatment'
     }
 ]
@@ -46,13 +47,14 @@ export default function Services() {
                         )
                     })}
                 </div>
-                <button
-                    className="my-5 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm text-center"
-                    onClick={() => window.location.href = '/services'}
-                >
-                    Reach Out
-                    <AiFillRightCircle className="inline-block ml-5 text-2xl text-white " />
-                </button>
+                <Link to={"pet-release"}>
+                    <button
+                        className="my-5 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm text-center"
+                    >
+                        Reach Out
+                        <AiFillRightCircle className="inline-block ml-5 text-2xl text-white " />
+                    </button>
+                </Link>
             </div>
         </>
     )

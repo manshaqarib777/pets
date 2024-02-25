@@ -8,14 +8,14 @@ export default function Shop() {
                 style={{ backgroundImage: "url('/shop.png')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', width: '95%', height: '100%', borderRadius: 24 }}
             >
                 <p className="font-semibold text-xl font-inter">One More Friend Thousands More Fun!</p>
-                <p className="text-4xl font-black">&quot;Find your furry soulmate at Our Pet Shop.&quot;</p>
-                <button
+                <p className="text-4xl font-black">&quot;Where Every Pet Finds Their Forever Home.&quot;</p>
+                {/* <button
                     className="bg-white  text-amber-500 font-semibold py-2 pl-5 pr-2 rounded-full w-fit font-inter text-sm"
                     onClick={() => window.location.href = '/shop'}
                 >
                     Get Now
                     <AiFillRightCircle className="inline-block ml-5 text-2xl text-amber-500 " />
-                </button>
+                </button> */}
             </div>
         </>
     )

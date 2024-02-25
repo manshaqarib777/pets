@@ -5,7 +5,7 @@ import pic3 from "../assets/footer-images/pic3.png"
 import pic4 from "../assets/footer-images/pic4.png"
 import { Link } from "react-router-dom";
 
-const phone_number = "+98765433"
+const phone_number = "+65 61234567"
 export default function Footer() {
     let date = new Date();
     let year = date.getFullYear();
@@ -15,13 +15,13 @@ export default function Footer() {
                 {/* upper footer */}
                 <div className="flex flex-row flex-wrap justify-between align-middle">
                     {/* primary div */}
-                    <div className="flex flex-col flex-wrap w-1/2 text-justify space-y-10">
+                    <div className="flex flex-col flex-wrap w-2/3 text-justify space-y-10">
                         <div className="flex flex-row justify-between align-middle space-x-10">
                             {/* <h2 className="font-bold text-xl w-4/5 text-center">YOUR LOGO HERE</h2> */}
                             <Link to={"/"} className="font-bold text-xl w-4/5 text-center"><img src="/logo.png"/></Link>
 
                             <p className="text-lg">
-                                &quot;Hey there, animal lover! Welcome to Pet Heaven Society, where tails wag, purrs rumble, and hearts are filled with love. We're more than just a pet adoption center – we're a family dedicated to giving pets the second chance they deserve.&quot;
+                                &quot;Welcome to Pet Heaven Society, where tails wag, purrs rumble, and hearts are filled with love. We're more than just a pet adoption center – we're a family dedicated to giving pets the second chance they deserve.&quot;
                             </p>
                         </div>
 
@@ -32,13 +32,13 @@ export default function Footer() {
 
                         <div>
                             <h3 className="text-lg">Location:</h3>
-                            <p className="font-bold text-xl">Address 56 Tengah Road</p>
+                            <p className="font-bold text-xl">60 Tengah Road #01-01, Singapore 600000</p>
                         </div>
 
                     </div>
 
                     {/* menu div */}
-                    <div>
+                    {/* <div>
                         <h3 className="mb-5 font-bold text-xl">Menu</h3>
                         <ul className="text-lg">
                             <li><Link to={"/"}>Home</Link></li>
@@ -48,7 +48,7 @@ export default function Footer() {
                             <li><Link to={"#shop"}>Shop</Link></li>
                             <li><Link to={"#contact"}>Contact</Link></li>
                         </ul>
-                    </div>
+                    </div> */}
                     {/* gallery div */}
                     <div>
                         <h3 className="mb-5 ml-5 text-xl font-bold">Gallery</h3>

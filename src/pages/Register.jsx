@@ -1,15 +1,47 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 function Register() {
+    const [formData, setFormData] = useState({
+        ownerFullName: '',
+        ownerAddress: '',
+        ownerPhoneNumber: '',
+        ownerEmail: '',
+        petName: '',
+        petType: '',
+        petBreed: '',
+        petAge: '',
+        petSex: '',
+        petSpayedNeutered: false,
+        petVaccinations: '',
+        petMedicalIssues: '',
+        petBehaviorStrangers: '',
+        petBehaviorChildren: '',
+        petBehaviorAnimals: '',
+        petAggressiveBehavior: '',
+    });
+    
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        const finalValue = type === 'checkbox' ? checked : value;
+        setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: finalValue,
+        }));
+    };
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formData);
+        // Send formData to your backend or process it as needed
+    };
 
   return (
-    <>
-        <Banner />
+    <>        
         <Header />
-        <div className="lg:max-w-[1600px] mt-5 mb-5 mx-auto text-center lg:min-h-[328px] flex flex-1">
+        <div className="lg:max-w-[1600px] mb-5 mx-auto text-center lg:min-h-[328px] flex flex-1">
             <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
             <div className="mt-12 flex flex-col items-center">
                 <h1 className="text-2xl xl:text-3xl font-extrabold">
@@ -110,10 +142,10 @@ function Register() {
                 </div>
             </div>
             </div>
-            <div className="flex-1 bg-indigo-100 text-center hidden lg:flex">
+            <div className="flex-1 text-center hidden lg:flex">
             <div
                 className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
-                style={{backgroundImage: "url('https://storage.googleapis.com/devitary-image-host.appspot.com/15848031292911696601-undraw_designer_life_w96d.svg')"}}
+                style={{backgroundImage: "url('/new-pets/pet14.jpg')"}}
             ></div>
             </div>
         </div>
