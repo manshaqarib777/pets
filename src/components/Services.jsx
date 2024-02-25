@@ -6,7 +6,7 @@ const services = [
     {
         title: "Dog/Cat Grooming",
         description: "Our priority is to ensure the well-being and happiness of every pet entrusted to us. By releasing your pet to Pet Heaven Society, you can have peace of mind knowing that they will receive the love, care, and attention they deserve while we work diligently to find them a new forever home.",
-        image: '/services/cat3.jpg',
+        image: '/services/cat7.jpg',
         link: '/services/pet-grooming'
     },
     {
